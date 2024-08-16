@@ -38,6 +38,8 @@ body {
 h1 {
     text-align: center;
     padding-top: 450px;
+    font-size: 50px;
+    font-family: 'Raleway',sans-serif;
     color: antiquewhite;
 }
 
@@ -88,17 +90,20 @@ h1 {
 }
 
 .mission h2, .vision h2 {
-    font-size: 30px;
+    font-size: 50px;
+    font-family: 'Roboto',sans-serif;
 }
 
 .mission p {
     padding-top: 180px;
-    font-size: 24px;
+    font-size: 25px;
+    font-family: 'Nunito Sans',sans-serif;
 }
 
 .vision p {
     padding-top: 140px;
-    font-size: 24px;
+    font-size: 25px;
+    font-family: 'Nunito Sans',sans-serif;
 }
 
 .image {
@@ -158,10 +163,16 @@ h1 {
     bottom: 0;
 }
 
+.page3{
+   padding-top: 50px;
+
+}
+
 .page3-leftbox, .page3-rightbox, .page3-middlebox, .customization,.customization1 {
     border: 1px solid black;
     
     position: relative;
+    cursor: pointer;
 }
 
 .page3-leftbox {
@@ -170,14 +181,37 @@ h1 {
     z-index: 3;
     border-radius: 27px;
     background: linear-gradient(-55deg,#1C475C 0%,#2C6E8F 50%,#3B96C2 100%);
-  
+   animation:slideLeft 4s ease-in-out infinite;
+
+}
+.page3-leftbox.zoomed-out {
+    width: 750px;  /* New width when zoomed out */
+    height: 553px; /* New height when zoomed out */
+    left: 445px;
+    top: 30px;
+    animation: none;
+}
+
+@keyframes slideLeft {
+    0%{
+        left:0;
+    }
+
+    50%{
+        left:-130px;
+    }
+
+    100%{
+        left:0px;
+    }
+    
 }
 
 .page3-middlebox {
     height: 304px;
     width: 428px;
     /* margin-left: 35%; */
-    left: 464px;
+    left: 427px;
     transform: translateY(-230px);
     z-index: 2;
     border-radius: 27px;
@@ -190,6 +224,20 @@ h1 {
     z-index: 1;
     border-radius: 27px;
     background:linear-gradient(-67deg,#267DAB 0%,#206A91 50%,#1B5878 100%);
+    animation:slideRight 4s ease-in-out infinite;
+}
+
+@keyframes slideRight {
+    0%{
+        right: 0;
+    }
+    50%{
+        right: -80px;
+    }
+    100%{
+        right: 0px;
+    }
+    
 }
 
 .customization {
@@ -197,6 +245,7 @@ h1 {
     width: 428px;
     left: 263px;
     top: -480px;
+    background-color: #BDD4DC;
    border-radius: 30px;
     
     z-index: 0;
@@ -204,8 +253,9 @@ h1 {
 .customization1{
     height: 232px;
     width: 428px;
-    left: 704px;
+    left: 604px;
     top: -715px;
+    background-color: #BDD4DC;
    border-radius: 30px;
     
     z-index: 0;
@@ -246,4 +296,115 @@ h1 {
     left: 1026px;
     top: -820px;
     z-index: 2;
+}
+.why{
+    text-align: end;
+}
+.why,.us{
+    font-size: 50px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+}
+
+.us{
+    text-align: start;
+ 
+}
+.top-notch{
+    font-size: 25px;
+    color: white;
+    font-family: 'Nunito Sans',sans-serif;
+    padding-left: 100px;
+    
+}
+
+.innovative,.feedback,.service{
+    font-size: 38px;
+    color: white;
+    font-family: 'Roboto',sans-serif;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+.in-market{
+    font-size: 25px;
+    color: white;
+    font-family: 'Nunito Sans',sans-serif;
+    padding-left: 160px;
+
+}
+
+.our{
+    font-size: 25px;
+    color: white;
+    font-family: 'Nunito Sans',sans-serif;
+    padding-left: 110px;
+
+}
+
+.is-strength{
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 25px;
+    color: white;
+    padding-left: 100px;
+}
+
+.we-deliver{
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 25px;
+    padding-top: 70px;
+    padding-left: 85px;
+    color: white;
+    animation: slideTextRight 4s ease-in-out infinite;
+
+}
+
+@keyframes slideTextRight {
+    0%{
+      transform: translateX(0);
+    }
+
+    50%{
+       transform:translateX(54px)
+    }
+    100%{
+        transform:translateX(0);
+    }
+    
+}
+
+.thats-our{
+    font-family: 'Nunito Sans',sans-serif;
+    font-size: 25px;
+    padding-left: 80px;
+    color: white;
+    animation: slideTextright1 4s ease-in-out infinite;
+    
+}
+@keyframes slideTextright1{
+    0%{
+        transform: translateX(0);
+
+    }
+
+    50%{
+        transform: translateX(30px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+.choose{
+    align-items: center;
+}
+
+
+
+#image6.moved-left {
+    left: 0 !important;
 }

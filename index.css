@@ -186,9 +186,12 @@ h1 {
 }
 .page3-leftbox.zoomed-out {
     width: 750px;  /* New width when zoomed out */
-    height: 553px; /* New height when zoomed out */
+    height: 563px; /* New height when zoomed out */
     left: 445px;
     top: 30px;
+    border: none;
+    color: transparent;
+    background-color: transparent;
     animation: none;
 }
 
